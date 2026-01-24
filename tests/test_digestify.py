@@ -8,10 +8,10 @@ from digestify import Digestify, Topic
 @pytest.mark.integration
 async def test_digestify() -> None:
     topic = Topic(
-        name="H3 Podcast",
+        name="World News",
         description=(
-            "A podcast hosted by Ethan Klein. "
-            "Main channel is called 'H3 Podcast' on YouTube."
+            "A summary of the most important global news stories covering politics, "
+            "economics, conflicts, and major events from around the world."
         ),
     )
 

@@ -1,11 +1,8 @@
 import asyncio
 
-import pytest
-
 from digestify import Digestify, Topic
 
 
-@pytest.mark.integration
 async def test_digestify() -> None:
     topic = Topic(
         name="World News",

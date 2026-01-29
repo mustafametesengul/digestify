@@ -1,6 +1,6 @@
 [project]
 name = "digestify"
-version = "0.1.1"
+version = "0.1.2"
 description = "Digestify is a Python library that generates comprehensive news digests and content summaries for specific topics using OpenAI and the WebQuest MCP server."
 readme = "README.md"
 license = "Apache-2.0"

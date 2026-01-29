@@ -3,17 +3,17 @@ services:
     image: mustafametesengul/webquest-mcp:latest
     environment:
       - WEBQUEST_MCP_AUTH_SECRET
-      - WEBQUEST_MCP_AUTH_AUDIENCE
+      - WEBQUEST_MCP_AUTH_AUDIENCE=webquest-mcp
       - WEBQUEST_MCP_TRANSPORT=streamable-http
       - WEBQUEST_MCP_HOST=0.0.0.0
-      - WEBQUEST_MCP_PORT=8000
+      - WEBQUEST_MCP_PORT=8001
       - HYPERBROWSER_API_KEY
       - OPENAI_API_KEY
     command: run
 
   ngrok:
     image: ngrok/ngrok:latest
-    command: http mcp:8000
+    command: http mcp:8001
     environment:
       - NGROK_AUTHTOKEN
     depends_on:

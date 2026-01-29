@@ -24,6 +24,8 @@ Digestify requires the following environment variables to be set (either in your
 - `WEBQUEST_MCP_ACCESS_TOKEN`: Access token for the WebQuest MCP server.
 - `WEBQUEST_MCP_URL`: URL for the WebQuest MCP server.
 - `OPENAI_MODEL`: (Optional) The OpenAI model to use (default: "gpt-5.2").
+- `MAX_TOOL_CALLS`: (Optional) Maximum number of tool calls allowed (default: 5).
+- `MAX_OUTPUT_TOKENS`: (Optional) Maximum number of tokens for the output (default: 100000).
 
 ## Usage
 
